@@ -1,0 +1,31 @@
+<idea-plugin>
+    <!-- Plug-in name, the name displayed by the official plugin library -->
+    <name>Arms</name>
+    <!-- version number  -->
+    <!--    <version>1.1</version>-->
+    <!-- homepage and email (contact address)-->
+    <vendor email="alanpaine@163.com" url="https://www.aifbd.com">Aifbd</vendor>
+
+    <!--  It is recommended to write the id of other plugins that the plugin depends on. Do
+    not write it. In some cases, uploading the plugin will report an error -->
+    <depends>com.intellij.modules.all</depends>
+
+    <!-- Write plugin actions -->
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.aifbd.NewArms" class="action.NewArmsAction" text="Arms" description="Create arms template code"
+                icon="/image/arms_icon.png">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- application level-->
+        <applicationService serviceImplementation="helper.DataService"/>
+        <applicationConfigurable parentId="tools"
+                                 instance="setting.SettingsConfigurable"
+                                 id="SettingsConfigurable"
+                                 displayName="Arms Setting"/>
+    </extensions>
+
+</idea-plugin>
