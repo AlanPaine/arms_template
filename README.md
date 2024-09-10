@@ -7,6 +7,8 @@
 
 **State management: riverpod + hooks**
 
+- Off-line template[arms_template](https://github.com/AlanPaine/arms_template/blob/master/release/arms_template-1.0.0.jar)
+
 - Right-click the File: New -> Arms
 - GitHub：[arms_template](https://github.com/AlanPaine/arms_template)
 
