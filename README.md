@@ -4,6 +4,7 @@
 **Used to generate the template code of Arms framework**
 
 **Route: GoRouter**
+
 **State management: riverpod + hooks**
 
 - Right-click the File: New -> Arms
